@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function myFunction() {
+            document.getElementById("head").innerHTML= "my Anchor Holds";
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="js.css">
+</head>
+<body>
+    <h1>Hello World</h1>
+    <p id="control">The God of all possibilities</p>
+    <button type="button" onclick='document.getElementById("control").innerHTML="God no they shame!"'>click me!</button>
+<hr>
+        <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+        <img id="myImage" src="pic_bulboff.gif" style="width: 50px;">
+
+        <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+<hr>
+        <p id="style">when christ DIED He paid it all.</p>
+        <button type="button" onclick="document.getElementById('style').style.fontSize='35px'">click Me!</button>
+<hr>
+        <p id="yes">no other name is Greater than these</p>
+        <button type="button" onclick="document.getElementById('yes').style.display='none'">click</button>
+<hr>
+        <p id="hide" style="display: none;">Jesus</p>
+        <button type="button" onclick="document.getElementById('hide').style.display='block'">show info</button>
+
+<hr>
+        <h2>javascript in the body</h2>
+        <p id="test"></p>
+        <script>document.getElementById('test').innerHTML="My first java script";</script>
+
+<hr>
+        <h2>javascript in the head</h2>
+        <p id="head">The solid Rock</p>
+        <button type="button" onclick="myFunction()">AND MY</button>
+
+        <hr>
+        <h2>javascript in the body</h2>
+        <p id="test 2">What God Cannot do!</p>
+        <button type="button" onclick="myFunction()">you say</button>
+        <script>
+            function myFunction() {
+                document.getElementById("test 2").innerHTML="Does not Exist.";
+            }
+        </script>
+<hr>
+        <p>writing innerhtml</p>
+        <p id="inner"></p>
+        <script>
+            document.getElementById("inner").innerHTML = 5 + 6;
+        </script>
+<hr>
+       <p>Using document.write</p>
+       <p id="doc"></p>
+       <script>
+        document.write(5 + 6)
+       </script>
+
+
+          <h2>using document . write</h2>
+          <p>it clears the click button</p>
+          <button type="button" onclick="document.write(5 + 6)">click</button>
+
+          <hr>
+            <h2>windows.alert</h2>
+            <p>alert pop up </p>
+            <script>
+                window.alert("JESUS DIED AT 33")
+            </script>
+            <SCript>
+                alert(5 + 6);
+            </SCript>
+
+            <hr>
+            <h2>console.log</h2>
+            <script>
+                console.log(5 + 6)
+            </script>
+            <hr>
+            <h2>
+                javascript print
+            </h2>
+            <p>click the button to print the curent page</p>
+            <button onclick="window.print()">print this page</button>
+            <hr>
+
+            <h2>Javascript statement</h2>
+            <p>A <b>Javascript program</b> is a list of <b>statements</b> to be executed by a computer</p>
+            <p id="statement"></p>
+            <script>
+                let x, y, z;  // statement 1
+                x = 5;        // statement 2
+                y = 6;        // statement 3
+                z = x + y;    // statement 4
+                document.getElementById('statement').innerHTML ="The value of z is "+z+".";
+            </script>
+             
+             <p>Multiple statement on one line allowed</p>
+            <p id="any"></p>
+            <script>
+                let a, b, c;
+                a=5; b=6; c=a + b;
+                document.getElementById('any').innerHTML= c;
+            </script>
+
+            <hr>
+            <h2>Javascript Statements</h2>
+            <p>Javascript code blocks are written between{ and }</p>
+            <button type="button" onclick="myFunction()">greeting</button>
+
+            <p id="first"></p>
+            <p id="second"></p>
+            <script>
+                function myFunction() {
+                    document.getElementById("first").innerHTML = "Hello Dolly!";
+  document.getElementById("second").innerHTML = "How are you?";
+                }
+            </script>
+
+
+
+
+
+
+
+
+
+          
+
+</body>
+</html>
