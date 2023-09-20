@@ -138,17 +138,56 @@
             lastname = "Peterson";
             document.getElementById("demo").innerHTML = lastName;
             </script>
-            
 
+            <p id="demo"></p>
+            <script>
+                try{
+                    carName = "saab";
+                    let carName = "Volve";
+                }
+                catch(err) {
+                    document.getElementById("demo").innerHTML = err;
+                }
+            </script>
 
+            <hr>
 
+            <h2>JavaScript const</h2>
 
+<p>Declaring a constant array does NOT make the elements unchangeable:</p>
 
+<p id="demo"></p>
 
+<script>
+// Create an Array:
+const cars = ["Saab", "Volvo", "BMW"];
 
+// Change an element:
+cars[0] = "Toyota";
 
+// Add an element:
+cars.push("Audi");
 
-          
+// Display the Array:
+document.getElementById("demo").innerHTML = cars; 
+</script>
+<hr>
+
+<h1>JavaScript Operators</h1>
+<h2>The Assignment (=) Operator</h2>
+
+<p id="demo"></p>
+
+<script>
+// Assign the value 5 to x
+let x = 5;
+// Assign the value 2 to y
+let y = 2;
+// Assign the value x + y to z
+let z = x + y;
+// Display z
+document.getElementById("demo").innerHTML = "The sum of x + y is: " + z;
+</script> 
 
 </body>
 </html>
